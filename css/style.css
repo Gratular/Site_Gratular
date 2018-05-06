@@ -1805,6 +1805,24 @@ fieldset[disabled] .s-btn {
   display: block;
 }
 
+//medium+ screen sizes
+@media (min-width:992px) {
+    .desktop-only {
+        display:block !important;
+    }
+}
+ 
+//small screen sizes
+@media (max-width: 991px) {
+    .mobile-only {
+        display:block !important;
+    }
+ 
+    .desktop-only {
+        display:none !important;
+    }
+}
+
 @media (max-width: 61.9em) {
   .s-header-v2__logo-img--default {
     display: none;
