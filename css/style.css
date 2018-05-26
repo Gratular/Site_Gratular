@@ -175,6 +175,33 @@ a:focus {
 /*----------------------------------
   Button
 ------------------------------------*/
+.primary-btn {
+	line-height: 40px;
+	padding: 0 40px;
+	border-radius: 20px;
+	background: transparent;
+	border: 1px solid $primary-color;
+	color: $title-color;
+	display: inline-block;
+	font-weight: 600;
+	@include transition();
+	cursor: pointer;
+	&:focus {
+		outline: none;
+	}
+	&.banner-btn {
+		color: $white;
+		margin-top: 60px;
+	}
+	span {
+		margin-left: 15px;
+	}
+	&:hover {
+		background: $primary-color;
+		color: $white;
+		box-shadow: 0px 10px 20px 0px rgba(60, 64, 143, 0.2);
+	}
+}
 .s-btn {
   display: inline-block;
   text-align: center;
@@ -1811,13 +1838,13 @@ fieldset[disabled] .s-btn {
         display:block !important;
     }
 }
- 
+
 //small screen sizes
 @media (max-width: 991px) {
     .mobile-only {
         display:block !important;
     }
- 
+
     .desktop-only {
         display:none !important;
     }
@@ -1954,6 +1981,7 @@ fieldset[disabled] .s-btn {
   .s-header-v2__nav-link.-is-active {
     color: #13b1cd;
   }
+
 }
 
 /* Dropdown
@@ -2390,4 +2418,31 @@ fieldset[disabled] .s-btn {
 
 .s-swiper__pagination-v1--dark .swiper-pagination-bullet-active {
   background: #13b1cd;
+}
+
+.signle-service {
+  margin-top: 30px;
+}
+
+.signle-service figcaption {
+  background: #fff;
+  padding: 40px 20px;
+}
+
+.signle-service figcaption h5 {
+  margin-bottom: 15px;
+}
+
+.signle-service figcaption p {
+  margin-bottom: 30px;
+}
+
+.banner-area {
+  background: url(../img/banner.jpg) no-repeat center center/cover;
+}
+
+.banner-area .overlay-bg {
+  background: -moz-linear-gradient(left, rgba(60, 64, 143, 0.95) 0%, rgba(91, 97, 207, 0.95) 100%);
+  background: -webkit-linear-gradient(left, rgba(60, 64, 143, 0.95) 0%, rgba(91, 97, 207, 0.95) 100%);
+  background: linear-gradient(to right, rgba(60, 64, 143, 0.95) 0%, rgba(91, 97, 207, 0.95) 100%);
 }
